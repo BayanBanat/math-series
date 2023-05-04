@@ -54,6 +54,11 @@ def lucas(n):
 
 # ////////////////sum_series///////////
 def sum_series(n,x=0,y=1):
+      '''
+     This function to calculate the summation series of number.
+    :param n ,x,y: int (x,y optional)
+    :return n: int
+    '''
 
     if type(n) != int:
           return "please inter a number"
