@@ -7,6 +7,10 @@
 
     python series.py
 
+**How to initialize/run application**
+
+    python series.py
+
 **Tests**
 using pytest to write and run tests for code
 using **TDD** process:
@@ -55,5 +59,4 @@ testing by run **pytest**
     if type(n) != int:
        return "please inter a number"
     ```
-
 
