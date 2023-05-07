@@ -66,14 +66,30 @@ def sum_series(n,x=0,y=1):
         if n==0 or n==1:
           return n
         else:
-           return fibonacci(n-1) + fibonacci(n-2)
+         prevNum11=0
+         prevNum22=1
+
+        for n in range(2, n+1):
+           sum=prevNum11+prevNum22
+           prevNum11=prevNum22
+           prevNum22=sum
+           
+        return sum
     if x==0 and y==2:
         if n==0:
           return 2
         if n==1:
           return 1
         else:
-           return lucas(n-1) + lucas(n-2) 
+         prev11=2
+         prev22=1
+
+        for n in range(2, n+1):
+           sum=prev11+prev22
+           prev11=prev22
+           prev22=sum
+           
+        return sum 
     else:
        prev1=x
        prev2=y
